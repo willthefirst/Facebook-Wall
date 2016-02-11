@@ -12,7 +12,11 @@ $(document).ready(function() {
 
 			// 3: Change the background-color of each new facebook post
 
-			// 4: Add a counter to the page that displays the number of posts that have been submitted
+			// 4: Replace the image that in each post
+
+			// 5: Append the current date to each post
+
+			// 6: Add a counter to the page that displays the number of posts that have been submitted
 
 		}
 	});
