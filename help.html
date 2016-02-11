@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://www.teaching-materials.org/common/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./intro.css"/>
+  <style>
+  *{
+    margin: 30px 0;
+  }
+  h1{
+    padding-bottom:20px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper container" tabindex="-1" role="main" >
+    <div class="page-inner">
+      <section class="normal" id="section-">
+        <h1 id="jquery">jQuery</h1>
+        <h2 id="select-elements">Select elements</h2>
+        <ul>
+          <li>
+            <p class="comments-section">use the <code>$()</code> function
+            </p>
+            <pre><code class="lang-js">$(<span class="hljs-string">'.js-modal'</span>).addClass(<span class="hljs-string">'is-active'</span>);
+            </code></pre>
+          </li>
+          <li>
+            <p class="comments-section">allows chaining
+            </p>
+            <pre><code class="lang-js">$(<span class="hljs-string">'.js-show-image'</span>).addClass(<span class="hljs-string">'is-active'</span>).addClass(<span class="hljs-string">'is-shown'</span>);
+            </code></pre>
+          </li>
+        </ul>
+        <h2 id="read-information-from-the-dom">Read information from the DOM</h2>
+        <ul>
+          <li><code>var total = $('h2.js-total').text()</code></li>
+          <li><code>var email = $('input.js-email').val()</code></li>
+          <li><code>var templateSource = $('#main-template').html()</code></li>
+        </ul>
+        <h2 id="write-information-to-the-dom">Write information to the DOM</h2>
+        <ul>
+          <li><code>$('.js-total').text(10)</code></li>
+          <li><code>$('.js-email').val('email@example.com')</code></li>
+        </ul>
+        <h2 id="add-elements-to-the-dom">Add elements to the DOM</h2>
+        <ul>
+          <li><code>$('.container').html('&lt;h1&gt;Hello&lt;/h1&gt;')</code></li>
+          <li><code>$('.container').append('&lt;h1&gt;Hello&lt;/h1&gt;')</code></li>
+          <li><code>$('.container').prepend('&lt;h1&gt;Hello&lt;/h1&gt;')</code></li>
+        </ul>
+        <h2 id="kick-off-your-application-when-the-page-is-loaded">Kick off your application when the page is loaded</h2>
+        <pre><code class="lang-js">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+          <span class="hljs-comment">// stuff that needs to access the DOM</span>
+        });
+      </code></pre>
+    </section>
+  </div>
+  
+
+
+
+
+  </body>
+  </html>
