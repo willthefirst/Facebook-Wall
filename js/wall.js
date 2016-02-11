@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	// 1: Select the button that the user clicks
-	$('REPLACE_ME_WITH_A_SELECTOR').click(function() {
+	$(REPLACE_ME_WITH_A_SELECTOR).click(function() {
 		if ($('#message').val().trim() != "") {
 
 			var element = "<br/><div class='row'><div class='col-md-2'><img src='http://i.imgur.com/87kIXSN.jpg'></div>" +
